@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Path
 
 app = FastAPI()
 
@@ -9,11 +9,18 @@ students = {
         "class": "year 12"
     }
 }
-
+# Path Parameters
 @app.get("/")
 def index():
     return {"name": "First Data"}
 
 @app.get("/get-students/{student_id}")
-def get_students(student_id: int):
+def get_students(student_id: int = Path(None, description="The id of the student you want to view.")):
     return students[student_id]
+# Query parameters
+@app.get("/get-by-name")
+def get_student(name: str):
+    for student_id in students:
+        if students[student_id]["name"] == name:
+            return students[student_id]
+    return {"Data": "Not Found"}
