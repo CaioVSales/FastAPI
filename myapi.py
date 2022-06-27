@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel
 
 app = FastAPI()
-#### Dictionary 
+#### Dictionary ####
 students = {
     1: {
         "name": "Caio",
