@@ -22,7 +22,7 @@ class updateStudent(BaseModel):
     age: Optional[int] = None
     year: Optional[str] = None
 
-#### Path Parameters
+#### Path Parameters ####
 @app.get("/")
 def index():
     return {"name": "First Data"}
@@ -39,7 +39,7 @@ def get_student_(*, student_id: int, name: Optional[str] = None, test : int):
             return students[student_id]
     return {"Data": "Not Found"}
 
-#### Request body and Post method
+#### Request body and Post method ####
 @app.post("/create-student/{student_id}")
 def create_student(student_id: int, student: Student):
     if student_id in students:
@@ -48,7 +48,7 @@ def create_student(student_id: int, student: Student):
     students[student_id] = student
     return students[student_id]
 
-#### Put method
+#### Put method ####
 @app.put("/update-student/{student_id}")
 def update_student(student_id: int, student: updateStudent):
     if student_id not in students:
