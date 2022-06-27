@@ -1,6 +1,7 @@
-# API development with FastAPI
+<h1>API development with FastAPI</h1>
 
 > Status: ⚠️ Developing ⚠️  
+
 ### FastAPI repository:
 * [GitHub](https://github.com/fastapi/fastapi)
 
