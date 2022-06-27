@@ -22,7 +22,7 @@ class updateStudent(BaseModel):
     age: Optional[int] = None
     year: Optional[str] = None
 
-#### Path Parameters
+#### Path Parameters ####
 @app.get("/")
 def index():
     return {"name": "First Data"}
