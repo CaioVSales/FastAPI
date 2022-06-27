@@ -21,7 +21,7 @@ def get_students(student_id: int = Path(None, description="The id of the student
 
 ##### Query parameters
 @app.get("/get-by-name/{student_id}")
-def get_student(*, student_id: int, name: Optional[str] = None, test : int):
+def get_student_(*, student_id: int, name: Optional[str] = None, test : int):
     for student_id in students:
         if students[student_id]["name"] == name:
             return students[student_id]
