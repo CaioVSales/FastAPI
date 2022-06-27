@@ -3,37 +3,37 @@
 > Status: ⚠️ Developing ⚠️  
 
 ### FastAPI repository:
-* [GitHub](https://github.com/fastapi/fastapi)
+* [GitHub](https://github.com/tiangolo/fastapi)
 
 
 
 # About the API
-### It is a simple Data collection about students 
+### It is a simple Data input that collects information about the students.  
 
 ### Directly learnt from the freecodecamp tutorial
-* [Tutorial link](https://www.youtube.com/watch?v=tLKKmouUams)
+* [Tutorial Link](https://www.youtube.com/watch?v=tLKKmouUams)
 
-## Some fields in main Model is:
+## Some fields in this API 
 
 + `id`
 + `name`
 + `year`
 + `age`
   
-## I implemented other features such as:
+## I implemented other features such as
 
 * `id deletion`
 * `id creation`
-* `id verification` (Can't use the same id)
+* `id verification` *_(Can't use the same id)_*
 
 
-## This features are in development:
+## These features are in development
 + `Class id`
 + `Subject name and id`
 + `Age verification`
 
 
-# Technologies used in:
+# Technologies used in
  <table>
         <tr tag="Name">
             <td>Python</td>
@@ -54,8 +54,9 @@
 
 
 
-# How to run the API:
+# How to run the API
 * 1) open the FastAPI directory
 * 2) run ***`uvicorn myapi:app --reload`*** inside the project directory.
 * 3) open the localhost ip
 * 4) feel free to test!
+* 5) ***remember to check all the required technologies!!!***
