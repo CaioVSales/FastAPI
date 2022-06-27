@@ -48,7 +48,7 @@ def create_student(student_id: int, student: Student):
     students[student_id] = student
     return students[student_id]
 
-#### Put method
+#### Put method ####
 @app.put("/update-student/{student_id}")
 def update_student(student_id: int, student: updateStudent):
     if student_id not in students:
