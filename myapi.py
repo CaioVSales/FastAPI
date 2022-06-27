@@ -1,3 +1,4 @@
+from lib2to3.pytree import Base
 from fastapi import FastAPI, Path
 from typing import Optional
 from pydantic import BaseModel
@@ -16,6 +17,11 @@ class Student(BaseModel):
     name: str
     age: int
     year: str
+
+class updateStudent(BaseModel):
+    name: Optional[str] = None
+    age: Optional[int] = None
+    year: Optional[str] = None
 
 #### Path Parameters
 @app.get("/")
@@ -39,6 +45,15 @@ def get_student_(*, student_id: int, name: Optional[str] = None, test : int):
 def create_student(student_id: int, student: Student):
     if student_id in students:
         return {"Error": "Student already exists"}
+    
+    students[student_id] = student
+    return students[student_id]
+
+#### Put method
+@app.put("/update-student/{student_id}")
+def update_student(student_id: int, student: updateStudent):
+    if student_id not in students:
+        return {"Error": "Student not found"}
     
     students[student_id] = student
     return students[student_id]
