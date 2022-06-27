@@ -1,4 +1,3 @@
-from lib2to3.pytree import Base
 from fastapi import FastAPI, Path
 from typing import Optional
 from pydantic import BaseModel
