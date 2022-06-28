@@ -8,9 +8,9 @@
 
 
 # About the API
-### It is a simple Data input that collects information about the students.  
+It is a simple Data input that collects information about the students.
 
-### Directly learnt from the freecodecamp tutorial
+Directly learnt from the freecodecamp tutorial
 * [Tutorial Link](https://www.youtube.com/watch?v=tLKKmouUams)
 
 ## Some fields in this API 
@@ -55,8 +55,8 @@
 
 
 # How to run the API
-* 1) open the FastAPI directory
-* 2) run ***`uvicorn myapi:app --reload`*** inside the project directory.
-* 3) open the localhost ip
-* 4) feel free to test!
-* 5) ***remember to check all the required technologies!!!***
+1) open the FastAPI directory
+2) run ***`uvicorn myapi:app --reload`*** inside the project directory.
+3) open the localhost ip
+4) feel free to test!
+5) ***remember to check all the required technologies!!!***
